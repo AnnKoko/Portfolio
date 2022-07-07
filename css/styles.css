@@ -1,15 +1,23 @@
 :root {
   --bg-color: #fff;
   );
+  --primary-text: #1A1A1A;
   --primary-color: #fc9dff;
   --box-shadow: 0 10px 35px rgba(255, 255, 255, 0.5);
   --primary-border: 1px solid var(--primary-color);
   --main-gradient: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
 }
+
+@media screen and (max-width: 900px) {
+  #contact i::before{
+    padding: 10px !important;
+  }
+}
+
 body {
   background: var(--bg-color);
   font-family: "Inter";
-  color: #1A1A1A;
+  color: var(--primary-text);
 }
 .main-content {
   width: 85%;
@@ -55,7 +63,7 @@ a:hover {
   padding: 15px 20px;
   font-size: 18px;
   line-height: 24px;
-  color: #1A1A1A;
+  color: var(--primary-text);
   text-align: center;
   text-decoration: none !important;
 }
@@ -131,6 +139,19 @@ opacity: 0.6;
   font-size: 16px !important;
 }
 
+.color-header.smaller{
+  font-size: 70px !important;
+}
+
+.mailme{
+  color: var(--primary-text);
+  font-size: 20px;
+}
+
+.dev-img{
+  height: 100%;
+}
+
 #navbarNav{
   font-family: "Inter";
   font-weight: 300;
@@ -177,4 +198,13 @@ opacity: 0.6;
   background: linear-gradient(135deg, #6964DE 2.88%, #FCA6E9 100%);
   opacity: 0.8;
   color: #fff !important;
+}
+
+#contact i::before{
+  background: linear-gradient(135deg, #6964DEC7 2.88%, #FCA6E9C4 100%);
+padding: 20px;
+border-radius: 60px;
+color: white;
+font-size: 20px;
+margin: 15px;
 }
